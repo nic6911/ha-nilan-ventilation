@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nilan Ventilation",
+        "description": "The unit is normally discovered automatically. Enter the connection details only when discovery is unavailable.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "password": "API password",
+          "noise_psk": "API encryption key"
+        },
+        "data_description": {
+          "password": "Only needed when the ESPHome API password is enabled.",
+          "noise_psk": "Base64 API encryption key shown in the ESPHome device configuration."
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Nilan Ventilation discovered",
+        "description": "Add the Nilan ventilation unit {name}?",
+        "data": {
+          "noise_psk": "API encryption key"
+        },
+        "data_description": {
+          "noise_psk": "Base64 API encryption key shown in the ESPHome device configuration."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Unable to connect to the ESPHome device.",
+      "invalid_auth": "Invalid API password.",
+      "invalid_encryption_key": "Invalid API encryption key.",
+      "encryption_required": "This device requires an API encryption key.",
+      "not_nilan": "The device does not expose the Nilan topology, values and status text sensors.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Nilan unit is already configured.",
+      "cannot_connect": "Unable to connect to the discovered ESPHome device.",
+      "mdns_missing_mac": "The discovered device does not report a MAC address.",
+      "not_nilan": "The discovered device is not running the Nilan firmware."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Nilan Ventilation connection",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "password": "API password",
+          "noise_psk": "API encryption key"
+        }
+      }
+    }
+  }
+}

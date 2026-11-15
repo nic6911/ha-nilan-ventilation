@@ -1,0 +1,14 @@
+{
+  "domain": "auto_nilan",
+  "name": "Nilan Ventilation",
+  "version": "0.2.0",
+  "codeowners": ["@nic6911"],
+  "config_flow": true,
+  "documentation": "https://github.com/nic6911/ha-nilan-ventilation",
+  "issue_tracker": "https://github.com/nic6911/ha-nilan-ventilation/issues",
+  "iot_class": "local_push",
+  "integration_type": "hub",
+  "dependencies": ["esphome", "zeroconf"],
+  "requirements": [],
+  "zeroconf": ["_esphomelib._tcp.local."]
+}

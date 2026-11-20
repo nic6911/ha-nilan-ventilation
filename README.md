@@ -13,11 +13,9 @@ Assistant entities automatically - no per-unit YAML, no register list, no MQTT.
 
 [![Open in Marketplace](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=nic6911&repository=ha-nilan-ventilation&category=integration)
 
-> **Status:** 0.2.0. The matching ESPHome component is on the
-> [`feature/nilan_auto_discovery`](https://github.com/nic6911/esphome_components/tree/feature/nilan_auto_discovery)
-> branch until it is merged upstream. CTS602 is validated on real hardware;
-> CTS602 Light and CTS400 are implemented from the Nilan Modbus documentation and
-> need field reports.
+> **Status:** 0.2.0. The matching ESPHome component is on `main`.
+> CTS602 is validated on real hardware; CTS602 Light and CTS400 are implemented
+> from the Nilan Modbus documentation and need field reports.
 
 ---
 
@@ -36,7 +34,7 @@ Use the ready-made YAML for the ESP32 Modbus Module:
 
 Firmware documentation, options and manual setup:
 
-**[auto_nilan component README](https://github.com/nic6911/esphome_components/blob/feature/nilan_auto_discovery/components/auto_nilan/README.md)**
+**[auto_nilan component README](https://github.com/nic6911/esphome_components/blob/main/components/auto_nilan/README.md)**
 
 The short version:
 
@@ -155,8 +153,7 @@ CTS400 uses `0x06`.
 ## Compatibility
 
 - Home Assistant 2026.2 or newer (tested on 2026.11)
-- ESPHome firmware `auto_nilan` from the
-  `feature/nilan_auto_discovery` branch
+- ESPHome firmware `auto_nilan` from the latest `main` branch
 - ESPHome Native API on local TCP port `6053` (no port forwarding)
 - Topology JSON version `1`
 

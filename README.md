@@ -7,6 +7,8 @@ ESPHome firmware:
 - **Nilan CTS602 Light**
 - **Nilan CTS400**
 
+For wiring look here: [Wiring Nilan to Modbus]([https://github.com/nic6911/ESP32_Modbus_Module/blob/main/esphome_example_code/rev1/nilan_ventilation_auto.yaml](https://github.com/nic6911/ESP32_Modbus_Module/blob/main/docs/nilan-connection-guide.md))
+
 The firmware detects the controller, its model and its capabilities, then
 publishes a topology JSON. This integration turns that topology into Home
 Assistant entities automatically - no per-unit YAML, no register list, no MQTT.
